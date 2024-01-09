@@ -1,0 +1,60 @@
+version: "3.7"
+
+services:
+    # image project
+    zdrav-php:
+        container_name: zdrav-php
+        build: ./php
+        restart: unless-stopped
+        working_dir: /var/www/
+        volumes:
+            - ${PROJECT_PATH}:/var/www
+        depends_on:
+            - zdrav-redis
+        networks:
+            - zdrav-network
+
+    # nginx
+    zdrav-nginx:
+        container_name: zdrav-nginx
+        build: ./nginx
+        restart: unless-stopped
+        ports:
+            - "${PORT_80}:80"
+            - "${PORT_443}:443"
+        volumes:
+            - ${PROJECT_PATH}:/var/www
+            - ./nginx/:/etc/nginx/conf.d/
+        networks:
+            - zdrav-network
+
+    # db mysql
+    zdrav-mysql:
+        container_name: zdrav-mysql
+        build: ./mysql
+        platform: linux/x86_64
+        restart: unless-stopped
+        environment:
+            MYSQL_DATABASE: ${DEFAULT_DATABASE}
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+            MYSQL_USER: ${MYSQL_USER}
+        volumes:
+            - ./mysql/db:/var/lib/mysql
+        ports:
+            - "${PORT_3306}:3306"
+        networks:
+            - zdrav-network
+
+    # redis
+    zdrav-redis:
+        container_name: zdrav-redis
+        build: ./redis
+        ports:
+            - "${PORT_6379}:6379"
+        networks:
+            - zdrav-network
+
+networks:
+    zdrav-network:
+        driver: bridge
