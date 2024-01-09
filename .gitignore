@@ -19,4 +19,4 @@ yarn-error.log
 /.vscode
 .editorconfig
 docker/.env
-docker/mysql/db/
+docker/mysql/db/*
