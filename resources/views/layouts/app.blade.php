@@ -20,16 +20,16 @@
 
     <script src="https://kit.fontawesome.com/5aa694f8ed.js" crossorigin="anonymous"></script>
 
-    <script src="{{asset('build/assets/jquery.mask.js')}}"></script>
+    <script src="{{asset('jquery.mask.js')}}"></script>
 
-    <link rel="stylesheet" href="{{ asset('build/assets/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('custom.css') }}">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{asset('build/assets/zdrav-logo-small.png')}}" width="25px" />
+                    <img src="{{asset('zdrav-logo-small.png')}}" width="25px" />
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
