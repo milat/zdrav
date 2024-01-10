@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <b>{{ __('domains.test') }}</b>
-                        <a href="{{route('test.create')}}" class="btn btn-outline-primary btn-sm"><i class="bi bi-plus-circle"></i> {{ __('actions.create') }}</a>
+                        <a href="{{route('test.create')}}" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-plus"></i> {{ __('actions.create') }}</a>
                     </div>
                     <div class="card-body">
 
@@ -51,20 +51,20 @@
                                                 <td class="text-center">{{$test->value}} {{$test->unit}}</td>
                                                 <td class="text-center">
                                                     @if ($test->reference->icon)
-                                                        <i style="color: {{$test->reference->color}};" class="bi bi-{{$test->reference->icon}}"></i>
+                                                        <i style="color: {{$test->reference->color}};" class="fa-solid fa-{{$test->reference->icon}}"></i>
                                                     @endif
                                                     {{ __('seeded.'.$test->reference->description) }}
                                                 </td>
                                                 <td class="text-center">
                                                     @if($test->note)
                                                         <a class="modal-trigger" href="javascript:;" note="{{$test->note}}">
-                                                            <i class="bi bi-card-text"></i>
+                                                            <i class="fa-regular fa-comments"></i>
                                                         </a>
                                                     @endif
                                                 </td>
                                                 <td class="text-center">
                                                     <a href="{{route('test.edit', ['id' => $test->id])}}" title="{{ __('actions.edit') }} {{ __('domains.test') }}">
-                                                        <i class="bi bi-pencil-square"></i>
+                                                        <i class="fa-regular fa-pen-to-square"></i>
                                                     </a>
                                                 </td>
                                             </tr>
