@@ -9,7 +9,7 @@
                         <b>{{ __('domains.training') }}</b>
                         <div>
                             <a href="{{route('training_category.view')}}" class="btn btn-outline-secondary btn-sm">{{ __('domains.training_category') }}</a>
-                            <a href="{{route('training.create')}}" class="btn btn-outline-primary btn-sm"><i class="bi bi-plus-circle"></i> {{ __('actions.create') }}</a>
+                            <a href="{{route('training.create')}}" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-plus"></i> {{ __('actions.create') }}</a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -54,22 +54,22 @@
                                                 <td class="text-center">@if ($training->length) {{$training->length}} {{ __('fields.training.unit') }} @else - @endif</td>
                                                 <td class="text-center" style="white-space: nowrap;">
                                                     @for($i = 1; $i <= $training->score->value; $i++)
-                                                        <i style="color: #ffc107" class="bi bi-star-fill"></i>
+                                                        <i style="color: #ffc107" class="fa-solid fa-star"></i>
                                                     @endfor
                                                     @for($i = 1; $i <= 5 - $training->score->value; $i++)
-                                                        <i style="color: #ffe69c" class="bi bi-star"></i>
+                                                            <i style="color: #ffe69c" class="fa-regular fa-star"></i>
                                                     @endfor
                                                 </td>
                                                 <td class="text-center">
                                                     @if($training->note)
                                                         <a class="modal-trigger" href="javascript:;" note="{{$training->note}}">
-                                                            <i class="bi bi-card-text"></i>
+                                                            <i class="fa-regular fa-comments"></i>
                                                         </a>
                                                     @endif
                                                 </td>
                                                 <td class="text-center">
                                                     <a href="{{route('training.edit', ['id' => $training->id])}}" title="{{ __('actions.edit') }} {{ __('domains.training') }}">
-                                                        <i class="bi bi-pencil-square"></i>
+                                                        <i class="fa-regular fa-pen-to-square"></i>
                                                     </a>
                                                 </td>
                                             </tr>
