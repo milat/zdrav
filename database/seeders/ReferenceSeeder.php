@@ -29,25 +29,25 @@ class ReferenceSeeder extends Seeder
             [
                 'description' => 'below',
                 'score' => 5,
-                'icon' => 'arrow-down-short',
+                'icon' => 'arrow-down',
                 'color' => 'orange'
             ],
             [
                 'description' => 'far below',
                 'score' => 1,
-                'icon' => 'arrow-down-short',
+                'icon' => 'arrow-down',
                 'color' => 'red'
             ],
             [
                 'description' => 'above',
                 'score' => 5,
-                'icon' => 'arrow-up-short',
+                'icon' => 'arrow-up',
                 'color' => 'orange'
             ],
             [
                 'description' => 'far above',
                 'score' => 1,
-                'icon' => 'arrow-up-short',
+                'icon' => 'arrow-up',
                 'color' => 'red'
             ],
             [

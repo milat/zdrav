@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <b>{{ __('domains.hydration') }}</b>
-                        <a href="{{route('hydration.create')}}" class="btn btn-outline-primary btn-sm"><i class="bi bi-plus-circle"></i> {{ __('actions.create') }}</a>
+                        <a href="{{route('hydration.create')}}" class="btn btn-outline-primary btn-sm"><i class="fa-solid fa-plus"></i> {{ __('actions.create') }}</a>
                     </div>
                     <div class="card-body">
 
@@ -40,22 +40,22 @@
                                                 <th scope="row" class="text-center" style= "white-space: nowrap;">{{ $hydration->amount }} {{$hydration->unit->abbreviation}}</th>
                                                 <td class="text-center" style="white-space: nowrap;">
                                                     @for($i = 1; $i <= $hydration->score->value; $i++)
-                                                        <i style="color: #ffc107" class="bi bi-star-fill"></i>
+                                                        <i style="color: #ffc107" class="fa-solid fa-star"></i>
                                                     @endfor
                                                     @for($i = 1; $i <= 5 - $hydration->score->value; $i++)
-                                                        <i style="color: #ffe69c" class="bi bi-star"></i>
+                                                        <i style="color: #ffe69c" class="fa-regular fa-star"></i>
                                                     @endfor
                                                 </td>
                                                 <td class="text-center">
                                                     @if($hydration->note)
                                                         <a class="modal-trigger" href="javascript:;" note="{{$hydration->note}}">
-                                                            <i class="bi bi-card-text"></i>
+                                                            <i class="fa-regular fa-comments"></i>
                                                         </a>
                                                     @endif
                                                 </td>
                                                 <td class="text-center">
                                                     <a href="{{route('hydration.edit', ['id' => $hydration->id])}}" title="{{ __('actions.edit') }} {{ __('domains.hydration') }}">
-                                                        <i class="bi bi-pencil-square"></i>
+                                                        <i class="fa-regular fa-pen-to-square"></i>
                                                     </a>
                                                 </td>
                                             </tr>
