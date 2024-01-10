@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="192x192" href="{{asset('zdrav-logo-small.png')}}">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -121,6 +126,7 @@
     </div>
     <script>
         $(document).ready(function(){
+            document.documentElement.requestFullscreen();
             $('#session-message').fadeIn('slow').delay(2000).fadeOut('slow');
             $('.float-input').mask("#.0", {reverse: true});
         });
