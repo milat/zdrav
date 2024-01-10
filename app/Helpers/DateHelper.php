@@ -19,7 +19,7 @@ abstract class DateHelper
 
         if ($hasTime) {
             $dbFormat .= ' H:i:s';
-            $userPreferenceFormat .= ' H:i:s';
+            $userPreferenceFormat .= ' H:i';
         }
 
         $dateObj = DateTime::createFromFormat($dbFormat, $date);
