@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-    <link rel="apple-touch-icon" href={{asset('zdrav-logo-small.png')}}>
+    <link rel="apple-touch-icon" href={{asset('oroboro-logo-white-small.png')}}>
     <meta name="apple-mobile-web-app-title" content="Zdrav">
 
     <!-- CSRF Token -->
@@ -37,7 +37,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{asset('zdrav-logo-small.png')}}" width="25px" />
+                    <img src="{{asset('oroboro-logo-transparent-small.png')}}" width="25px" />
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

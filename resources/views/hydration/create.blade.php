@@ -37,7 +37,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.hydration.amount') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="amount" class="form-control" id="amount" placeholder="" value="{{isset($hydration)?$hydration->amount:old('amount')}}">
+                                    <input type="number" name="amount" class="form-control" id="amount" placeholder="" value="{{isset($hydration)?$hydration->amount:old('amount')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->hydrationUnit->abbreviation}}</div>
                                     </div>
