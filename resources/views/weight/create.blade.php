@@ -37,7 +37,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.weight.value') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="value" class="form-control float-input" id="value" placeholder="" value="{{isset($weight)?\App\Helpers\NumberHelper::toFloat($weight->value):old('value')}}">
+                                    <input type="number" name="value" class="form-control float-input" id="value" placeholder="" value="{{isset($weight)?\App\Helpers\NumberHelper::toFloat($weight->value):old('value')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->weightUnit->abbreviation}}</div>
                                     </div>
