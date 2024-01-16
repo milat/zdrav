@@ -37,7 +37,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.neck') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="neck" class="form-control float-input" id="neck" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->neck):old('neck')}}">
+                                    <input type="number" name="neck" class="form-control float-input" id="neck" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->neck):old('neck')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -47,7 +47,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.left_biceps') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="left_biceps" class="form-control float-input" id="left_biceps" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_biceps):old('left_biceps')}}">
+                                    <input type="number" name="left_biceps" class="form-control float-input" id="left_biceps" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_biceps):old('left_biceps')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -57,7 +57,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.right_biceps') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="right_biceps" class="form-control float-input" id="right_biceps" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_biceps):old('right_biceps')}}">
+                                    <input type="number" name="right_biceps" class="form-control float-input" id="right_biceps" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_biceps):old('right_biceps')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -67,7 +67,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.left_forearm') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="left_forearm" class="form-control float-input" id="left_forearm" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_forearm):old('left_forearm')}}">
+                                    <input type="number" name="left_forearm" class="form-control float-input" id="left_forearm" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_forearm):old('left_forearm')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -77,7 +77,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.right_forearm') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="right_forearm" class="form-control float-input" id="right_forearm" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_forearm):old('right_forearm')}}">
+                                    <input type="number" name="right_forearm" class="form-control float-input" id="right_forearm" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_forearm):old('right_forearm')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -87,7 +87,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.chest_bust') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="chest_bust" class="form-control float-input" id="chest_bust" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->chest_bust):old('chest_bust')}}">
+                                    <input type="number" name="chest_bust" class="form-control float-input" id="chest_bust" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->chest_bust):old('chest_bust')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -97,7 +97,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.abdomen') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="abdomen" class="form-control float-input" id="abdomen" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->abdomen):old('abdomen')}}">
+                                    <input type="number" name="abdomen" class="form-control float-input" id="abdomen" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->abdomen):old('abdomen')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -107,7 +107,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.waist') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="waist" class="form-control float-input" id="waist" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->waist):old('waist')}}">
+                                    <input type="number" name="waist" class="form-control float-input" id="waist" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->waist):old('waist')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -117,7 +117,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.hips') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="hips" class="form-control float-input" id="hips" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->hips):old('hips')}}">
+                                    <input type="number" name="hips" class="form-control float-input" id="hips" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->hips):old('hips')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -127,7 +127,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.left_thigh') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="left_thigh" class="form-control float-input" id="left_thigh" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_thigh):old('left_thigh')}}">
+                                    <input type="number" name="left_thigh" class="form-control float-input" id="left_thigh" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_thigh):old('left_thigh')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -137,7 +137,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.right_thigh') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="right_thigh" class="form-control float-input" id="right_thigh" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_thigh):old('right_thigh')}}">
+                                    <input type="number" name="right_thigh" class="form-control float-input" id="right_thigh" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_thigh):old('right_thigh')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -147,7 +147,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.left_calf') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="left_calf" class="form-control float-input" id="left_calf" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_calf):old('left_calf')}}">
+                                    <input type="number" name="left_calf" class="form-control float-input" id="left_calf" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_calf):old('left_calf')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -157,7 +157,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.right_calf') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="right_calf" class="form-control float-input" id="right_calf" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_calf):old('right_calf')}}">
+                                    <input type="number" name="right_calf" class="form-control float-input" id="right_calf" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_calf):old('right_calf')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -167,7 +167,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.left_ankle') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="left_ankle" class="form-control float-input" id="left_ankle" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_ankle):old('left_ankle')}}">
+                                    <input type="number" name="left_ankle" class="form-control float-input" id="left_ankle" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->left_ankle):old('left_ankle')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>
@@ -177,7 +177,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.measurement.right_ankle') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="right_ankle" class="form-control float-input" id="right_ankle" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_ankle):old('right_ankle')}}">
+                                    <input type="number" name="right_ankle" class="form-control float-input" id="right_ankle" placeholder="" value="{{isset($measurement)?\App\Helpers\NumberHelper::toFloat($measurement->right_ankle):old('right_ankle')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{Auth::user()->preferences->measurementUnit->abbreviation}}</div>
                                     </div>

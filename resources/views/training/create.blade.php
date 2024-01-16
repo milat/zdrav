@@ -48,7 +48,7 @@
                             <div class="form-group mt-2">
                                 <label for="value">{{ __('fields.training.length') }}</label>
                                 <div class="input-group">
-                                    <input type="text" name="length" class="form-control" id="length" placeholder="" value="{{isset($training)?$training->length:old('length')}}">
+                                    <input type="number" name="length" class="form-control" id="length" placeholder="" value="{{isset($training)?$training->length:old('length')}}">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">{{ __('fields.training.unit') }}</div>
                                     </div>
