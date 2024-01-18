@@ -46,7 +46,7 @@
 
                             <div class="form-group mt-2">
                                 <label for="date">{{ __('fields.test.value') }}</label>
-                                <input type="number" name="value" class="form-control float-input" id="value" value="{{isset($test)?$test->value:old('value')}}">
+                                <input type="number" name="value" class="form-control float-input" step="0.01" pattern="[0-9]+([,\.][0-9]+)?" id="value" value="{{isset($test)?$test->value:old('value')}}">
                             </div>
 
                             <div class="form-group mt-2">
