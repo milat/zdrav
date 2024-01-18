@@ -9,8 +9,8 @@ services:
         working_dir: /var/www/
         volumes:
             - ${PROJECT_PATH}:/var/www
-        depends_on:
-            - zdrav-redis
+#        depends_on:
+#            - zdrav-redis
         networks:
             - zdrav-network
 
@@ -47,13 +47,14 @@ services:
             - zdrav-network
 
     # redis
-    zdrav-redis:
-        container_name: zdrav-redis
-        build: ./redis
-        ports:
-            - "${PORT_6379}:6379"
-        networks:
-            - zdrav-network
+#    zdrav-redis:
+#        container_name: zdrav-redis
+#        build: ./redis
+#        restart: unless-stopped
+#        ports:
+#            - "${PORT_6379}:6379"
+#        networks:
+#            - zdrav-network
 
 networks:
     zdrav-network:
